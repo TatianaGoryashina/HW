@@ -1,0 +1,3 @@
+При проверке def capitalize(self, string: str) -> str: со значениями     (" шмель", " Шмель"), ("ТАНЯ", "ТАНЯ") тест проваливается.
+
+При проверке  def delete_symbol(self, string: str, symbol: str) -> str: со значениями ("World", "Word", "l") тест проваливается
