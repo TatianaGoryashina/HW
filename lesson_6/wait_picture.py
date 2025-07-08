@@ -10,11 +10,13 @@ driver = webdriver.Chrome(
 waiter = WebDriverWait(driver, 20)
 
 # переходим на сайт
-driver.get("https://bonigarcia.dev/selenium-webdriver-java/loading-images.html")
+driver.get(
+    "https://bonigarcia.dev/selenium-webdriver-java/loading-images.html")
 driver.maximize_window()  # чтобы было видно все появляющиеся картинки
 
 # устанавливаем ожидания
-waiter.until(EC.text_to_be_present_in_element((By.CSS_SELECTOR, "#text"), "Done"))
+waiter.until(
+    EC.text_to_be_present_in_element((By.CSS_SELECTOR, "#text"), "Done"))
 
 # вывод в консоль атрибута
 pictures = driver.find_elements(By.CSS_SELECTOR, "img")

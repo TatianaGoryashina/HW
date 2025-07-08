@@ -4,7 +4,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 
 driver = webdriver.Chrome(
-    service=ChromeService(ChromeDriverManager().install()))
+    service=ChromeService(ChromeDriverManager().install())
+)
 
 # устанавливаем ожидания
 driver.implicitly_wait(4)
