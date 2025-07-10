@@ -19,7 +19,7 @@ def test_color_forms(driver):
         "https://bonigarcia.dev/selenium-webdriver-java/data-types.html")
     driver.implicitly_wait(4)
 
-    # заполняем формы значениями
+    # заполняю формы значениями
     driver.find_element(
         By.CSS_SELECTOR, '[name="first-name"]').send_keys("Иван")
     driver.find_element(
@@ -43,6 +43,7 @@ def test_color_forms(driver):
     driver.find_element(
         By.CSS_SELECTOR, '[type="submit"]').click()
 
+    # создаю переменные для проверки
     first_name = driver.find_element(
         By.CSS_SELECTOR, '[id="first-name"]')
     last_name = driver.find_element(

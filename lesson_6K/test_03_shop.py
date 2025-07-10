@@ -48,7 +48,7 @@ def test_shop(driver):
     driver.find_element(
         By.CSS_SELECTOR, "#postal-code").send_keys("670045")
 
-    # Push continue
+    # нажимаю продолжить
     driver.find_element(
         By.CSS_SELECTOR, "#continue").click()
 

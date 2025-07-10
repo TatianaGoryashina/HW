@@ -17,17 +17,17 @@ def driver():
 
 
 def test_wair_calc(driver):
-    # go to page
+    # окрываю сайт
     driver.get(
         "https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html")
     driver.implicitly_wait(4)
 
-    # find element by locator
+    # выставляю ожидание для калькулятора
     delay = driver.find_element(By.CSS_SELECTOR, "#delay")
     delay.send_keys(Keys.BACKSPACE)
     delay.send_keys("45")
 
-    # input in calculator
+    # совершаю операцию в калькуляторе
     driver.find_element(By.XPATH, "//*[text()='7']").click()
     driver.find_element(By.XPATH, "//*[text()='+']").click()
     driver.find_element(By.XPATH, "//*[text()='8']").click()
@@ -37,5 +37,6 @@ def test_wair_calc(driver):
     WebDriverWait(driver, 48).until(
         EC.text_to_be_present_in_element((By.CLASS_NAME, "screen"), '15'))
 
+    # провожу проверку
     result = driver.find_element(By.CSS_SELECTOR, '[class="screen"]').text
     assert int(result) == 15
