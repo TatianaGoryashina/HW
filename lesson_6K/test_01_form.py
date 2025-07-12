@@ -27,7 +27,7 @@ def test_color_forms(driver):
     driver.find_element(
         By.CSS_SELECTOR, '[name="address"]').send_keys("Ленина, 55-3")
     driver.find_element(
-        By.CSS_SELECTOR, '[name="city"]').send_keys("test@skypro.com")
+        By.CSS_SELECTOR, '[name="city"]').send_keys("Москва")
     driver.find_element(
         By.CSS_SELECTOR, '[name="country"]').send_keys("Россия")
     driver.find_element(

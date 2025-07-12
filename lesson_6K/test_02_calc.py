@@ -20,7 +20,6 @@ def test_wair_calc(driver):
     # окрываю сайт
     driver.get(
         "https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html")
-    driver.implicitly_wait(4)
 
     # выставляю ожидание для калькулятора
     delay = driver.find_element(By.CSS_SELECTOR, "#delay")
