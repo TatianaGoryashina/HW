@@ -12,6 +12,7 @@ def driver():
     yield driver
     driver.quit()
 
+
 def test_waiter_calc(driver):
     mane_page_calc = ManePageCalc(driver)
     mane_page_calc.open_calc()

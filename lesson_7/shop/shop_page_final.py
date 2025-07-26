@@ -1,23 +1,25 @@
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
 class final:
-    def fill_input_field():
+    def __init__(self, driver):
+        self.driver = driver
+
+    def fill_input_field(self):
         # Запонение полей ввода данных пользователя
-        driver.find_element(
+        self.driver.find_element(
             By.CSS_SELECTOR, "#first-name").send_keys("Tatiana")
-        driver.find_element(
+        self.driver.find_element(
             By.CSS_SELECTOR, "#last-name").send_keys("Goryashina")
-        driver.find_element(
+        self.driver.find_element(
             By.CSS_SELECTOR, "#postal-code").send_keys("670045")
         # нажимаю продолжить
-        driver.find_element(
+        self.driver.find_element(
             By.CSS_SELECTOR, "#continue").click()
 
-    def total():
+    def total(self):
         # прочесть total
-        txt = driver.find_element(
+        txt = self.driver.find_element(
             By.CSS_SELECTOR, '[data-test="total-label"]').text
         # сравнение значения total
         assert txt == "Total: $58.29"

@@ -11,7 +11,8 @@ class ManePageCalc:
     # окрываю сайт
     def open_calc(self):
         self._driver.get(
-            "https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html"
+            "https://bonigarcia.dev/selenium- \
+            webdriver-java/slow-calculator.html"
         )
 
     # выставляю ожидание для калькулятора
