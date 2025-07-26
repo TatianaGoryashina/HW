@@ -14,7 +14,7 @@ class autorize:
         driver.get("https://www.saucedemo.com/")
         driver.implicitly_wait(4)
 
-    def autorize():
+    def auto():
             # авторизация на сайте
         driver.find_element(
             By.CSS_SELECTOR, "#user-name").send_keys("standard_user")

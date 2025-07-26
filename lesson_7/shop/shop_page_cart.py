@@ -1,12 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-@pytest.fixture
-def driver():
-    driver = webdriver.Firefox()
-    yield driver
-    driver.quit()
-
 class cart:
     def checkout():
             # chekout

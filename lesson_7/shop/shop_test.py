@@ -12,8 +12,6 @@ def driver():
     yield driver
     driver.quit()
 
-driver.open_shop()
-driver.autorize()
-driver.add_products()
-driver.go_to_cart()
-driver.checkout()
+def test_shop_buy(driver):
+    driver.open_shop()
+    driver.auto()
