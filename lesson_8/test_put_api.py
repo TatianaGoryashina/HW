@@ -1,9 +1,8 @@
 import requests
 
-key = "RbfePTSYfbz-5MvUI08XCPp-8nuzKDZDvKvkNenLIxXPojUSenpracAkvEWtCzMA"
 
 BEARER_TOKEN = (
-    'RbfePTSYfbz-5MvUI08XCPp-8nuzKDZDvKvkNenLIxXPojUSenpracAkvEWtCzMA'
+    '*'
 )
 URL = (
     'https://yougile.com/api-v2/projects/'

@@ -2,7 +2,7 @@ import requests
 
 
 TOKEN = (
-    'RbfePTSYfbz-5MvUI08XCPp-8nuzKDZDvKvkNenLIxXPojUSenpracAkvEWtCzMA'
+    '*'
 )
 URL = (
     'https://yougile.com/api-v2/projects/'
