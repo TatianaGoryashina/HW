@@ -1,17 +1,6 @@
 import requests
-
-
-BEARER_TOKEN = (
-    '*'
-)
-URL = (
-    'https://yougile.com/api-v2/projects/'
-)
-
-HEADERS = {
-    'Authorization': f'Bearer {BEARER_TOKEN}',
-    'Content-Type': 'application/json'
-}
+from config import URL
+from config import HEADERS
 
 
 def test_put_project_by_id():  # позитивный тест

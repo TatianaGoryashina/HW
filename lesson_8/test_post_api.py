@@ -1,15 +1,6 @@
 import requests
-
-
-TOKEN = (
-    '*'
-)
-URL = 'https://yougile.com/api-v2/projects'
-
-HEADERS = {
-    'Authorization': f'Bearer {TOKEN}',
-    'Content-Type': 'application/json'
-}
+from config import URL
+from config import HEADERS
 
 
 def test_post_project():  # позитивный тест
