@@ -1,7 +1,7 @@
 from database import Subjects
 
 
-db_connection_strings = "postgresql://postgres:123@localhost:5432/postgres"
+db_connection_strings = "****"
 sub = Subjects(db_connection_strings)
 
 
