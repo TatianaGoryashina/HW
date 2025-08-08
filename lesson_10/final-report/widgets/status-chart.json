@@ -1,0 +1,1 @@
+[{"uid":"2d58627b3c05662f","name":"Проверка появления ответа в калькуляторе","time":{"start":1754665567566,"stop":1754665614878,"duration":47312},"status":"passed","severity":"blocker"},{"uid":"26ee4212865ba920","name":"Проверка итоговой суммы и заранее заданного значения","time":{"start":1754665622056,"stop":1754665626016,"duration":3960},"status":"passed","severity":"blocker"}]
