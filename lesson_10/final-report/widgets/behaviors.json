@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"1030cd820fe62a8974ff29a543ae3f16","name":"Проверка калькулятора","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}},{"uid":"f50bc650b981243ab17e500c1c4915a4","name":"Проверка итоговой суммы при заказе товара на сайте","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}
